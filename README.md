@@ -36,8 +36,10 @@ docker network create hazelcast-network
 
 5. Run the Hazelcast Docker container.
 
+**WARING:** Run Docker container in PowerShell with admin rights to avoid issues!
+
 ```bash
-docker run -it --network hazelcast-network --rm -e HZ_NETWORK_PUBLICADDRESS=10.0.75.1:5701 -e HZ_CLUSTERNAME=hello-world -p 5701:5701 hazelcast/hazelcast:5.3.6
+docker run -it --network hazelcast-network --rm -e HZ_NETWORK_PUBLICADDRESS=10.0.75.1:5701 -e HZ_CLUSTERNAME=DB2 -p 5701:5701 hazelcast/hazelcast:5.3.6
 ```
 
 You should see your cluster name in the console along with the IP address of the Docker host:
@@ -45,12 +47,16 @@ You should see your cluster name in the console along with the IP address of the
 ![platform-cluster-name.png](res%2Fplatform-cluster-name.png)
 
 # Appendix
+
 ## Authors
+
 This example was created by Mick Eisebraun, Timo Feucht, Lea Gastgeb and Louis Schaak for the course "Datenbanken 2:
-Aktuelle Datenbanken Architekturen und Technologien". The course is part of the Bachelors's program "Informatik" at the DHBW.
+Aktuelle Datenbanken Architekturen und Technologien". The course is part of the Bachelors's program "Informatik" at the
+DHBW.
 The course is taught by Rykarda Heim.
 
 ## Literature
+
 - [Hazelcast - Start a Local Cluster in Docker](https://docs.hazelcast.com/hazelcast/5.3/getting-started/get-started-docker)
 - [Docker - Get Docker](https://docs.docker.com/get-docker/)
 - [Get Started with SQL Over Maps](https://docs.hazelcast.com/hazelcast/5.3/sql/get-started-sql)
