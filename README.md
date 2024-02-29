@@ -48,6 +48,11 @@ You should see your cluster name in the console along with the IP address of the
 
 # Appendix
 
+## Note
+The project was created with [PyCharm](https://www.jetbrains.com/pycharm/) 
+and tested on a Windows 11 machine with Docker Desktop 4.26.0 and Python 3.11.
+Any other environment was not tested and may not work as expected.
+
 ## Authors
 
 This example was created by Mick Eisebraun, Timo Feucht, Lea Gastgeb and Louis Schaak for the course "Datenbanken 2:
@@ -60,4 +65,4 @@ The course is taught by Rykarda Heim.
 - [Hazelcast - Start a Local Cluster in Docker](https://docs.hazelcast.com/hazelcast/5.3/getting-started/get-started-docker)
 - [Docker - Get Docker](https://docs.docker.com/get-docker/)
 - [Get Started with SQL Over Maps](https://docs.hazelcast.com/hazelcast/5.3/sql/get-started-sql)
-- 
+
